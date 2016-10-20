@@ -38,6 +38,7 @@ A web crawler based on python-scrapy
   3.1. 使用XPath（XML路径语言），结合正则表达式(RegEx)得到各元素的值（为字符串列表），即建立scrapy的选择器（selector）
   
   3.2. 将元素存储入item[]中
+  
   3.3. 初步判断该页面内元素的合法性，若合法则用生成器生成，进入pipeline准备输出
   
   3.4. 回调parse()，解析下一页
@@ -52,9 +53,21 @@ A web crawler based on python-scrapy
   
   6.2. 将合法元素分行插入SQL数据库的表中
   
+注1: 流程图上传失败，待之后补充
+
+注2: 演示用output.json因网速问题并未包含所有合法结果
+
+注3: 运行方式：在spider目录下执行scrapy crawl eastmoney_test
 
 ## 待优化
-（正在补充）
+
+1. 对于每支股票的股吧内的帖子的发表年份的获取方式由单一的request变更为建立连接池并发执行
+
+2. 对于所有的股吧的分析可采用多进程进行加速，初步考虑使用OpenMP，或scrapy内建方案（如有）
+
+3. 访问排序后的帖子或可适时停止对下一页的访问和分析
+
+4. 将工程进行封装
 
 # English Version
 To be continued...
