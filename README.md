@@ -35,7 +35,7 @@ A web crawler based on python-scrapy
 
 3. scrapy包对start_url[]中的链接进行HTTP GET请求，使用parse()对返回结果进行解析
 
-  3.1. 使用XPath（XML路径语言），结合正则表达式得到各元素的值（为字符串列表），即建立scrapy的选择器（selector）
+  3.1. 使用XPath（XML路径语言），结合正则表达式得到各元素的值（为字符串列表）。即建立scrapy的选择器
   
   3.2. 将元素存储入item[]中
   
