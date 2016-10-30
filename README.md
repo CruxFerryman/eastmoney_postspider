@@ -5,7 +5,9 @@ A web crawler based on python-scrapy
 
 
 # 中文介绍 | (Chinese Version)
-更新：2016年10月20日
+更新：2016年10月30日
+
+Note：为更好地支持Python 3.5，接下来可能会从使用Scrapy框架转为使用Asyncio框架
 
 ## 用途
 
